@@ -18,7 +18,7 @@ function AlfiLegal() {
       <div className='mt-5'>
         <h1 className="font-[600] text-[55px] text-white leading-[74.71px] uppercase">Alfi legal</h1>
         <div className="border-t-4 border-indigo-500 w-full"></div>
-        <h4 className="font-[600] text-[34px] text-white leading-[36.36px] uppercase text-right">Investment Solutions</h4>
+        <h4 className="font-[600] text-[34px] text-white leading-[36.36px] uppercase text-right mt-4">Investment Solutions</h4>
       </div>
       <div className='my-5 text-center text-white'>
         <h1 className='font-[400] text-[45px] text-white leading-[63px]'>Lawyers & Investment Advisors</h1>

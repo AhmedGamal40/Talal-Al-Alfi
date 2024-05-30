@@ -1,32 +1,75 @@
 import React from 'react'
-
+import Logo from "../../../../public/Assets/Images/logo2.png"
+import Image from 'next/image';
 function FormsContact() {
   return (
     <>
-    <div className='container mx-auto'>
-        <div className='flex justify-between space-x-8 my-28'>
-            {/* contat */}
-            <div>
-      fefewfwefwefrewggggggggggggggggggggggggggggggggggggggggggggggg
-            </div>
-            {/* form */}
-            <div class=" bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-      <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
-      <div class="relative mb-4">
-        <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
-        <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-      </div>
-      <div class="relative mb-4">
-        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
-      </div>
-      <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-      <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-            </div>
+      <div className="flex md:justify-around justify-center md:flex-row flex-col my-20">
+        {/* Contact form */}
+        <div className="md:w-1/2 my-10 lg:px-20 px-10 items-center md:text-start text-center text-[#C2C2C2]">
+          If you're seeking personalized legal advice, don't hesitate to reach
+          out  for expert counsel tailored to your specific needs and
+          circumstances.
         </div>
-    </div>
+        {/* form */}
+        {/* form */}
+        <div className=" bg-white p-10 mx-auto shadow-lg w-full max-w-lg">
+          <div className="text-center mb-8">
+            <Image src={Logo} alt="Logo" />
+          </div>
+          <form>
+            <div className="flex mb-4">
+              <div className="w-1/2 pr-2">
+                <input
+                  type="text"
+                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  placeholder="First Name"
+                />
+              </div>
+              <div className="w-1/2 pl-2">
+                <input
+                  type="text"
+                  id="lastName"
+                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div className="mb-4">
+              <input
+                type="email"
+                id="email"
+                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                placeholder="Email Address"
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                type="text"
+                id="subject"
+                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                placeholder="Subject"
+              />
+            </div>
+            <div className="mb-4">
+              <textarea
+                id="message"
+                className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+                placeholder="Message"
+                rows="5"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition duration-300"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default FormsContact
