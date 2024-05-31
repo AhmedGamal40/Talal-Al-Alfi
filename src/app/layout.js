@@ -5,6 +5,7 @@ import TopHeader from "./Components/Layout/TopHeader";
 import Footer from "./Components/Layout/Footer";
 import Head from "next/head";
 import { Josefin_Sans } from '@next/font/google';
+import Communication from "./Components/Layout/Communication";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
       <main className={josefinSans.className}>
         <TopHeader />
         <Navbar />
+        <Communication />
         {children}
         <Footer />
       </main>

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
     <AlfiLegal />
-    <Communication />
+    {/* <Communication /> */}
     <Expertise />
     <VideoGallery />
     <FormContact />
