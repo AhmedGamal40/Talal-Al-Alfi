@@ -6,14 +6,14 @@ function AlfiLegal() {
   return (
     
     <div className="relative w-full h-full flex items-center justify-center">
-    <Image
+    {/* <Image
       src={coverImage}
       alt="Cover Image"
       layout="fill"
       objectFit="cover"
       quality={100}
       className="z-0"
-    />
+    /> */}
     <div className=" w-[758px] z-10 my-10">
       <div className='mt-5'>
         <h1 className="font-[600] text-[55px] text-white leading-[74.71px] uppercase">Alfi legal</h1>

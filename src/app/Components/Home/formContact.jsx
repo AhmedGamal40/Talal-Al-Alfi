@@ -4,7 +4,7 @@ import Image from "next/image";
 function FormContact() {
   return (
     <>
-      <div className="flex md:justify-around justify-center md:flex-row flex-col my-20">
+      <div className="flex md:justify-around justify-center md:flex-row flex-col mt-20 pb-20">
         {/* Contact form */}
         <div className="md:w-1/2 my-10 lg:px-20 px-10 items-center md:text-start text-center text-[#C2C2C2]">
           If you`re seeking personalized legal advice, don`t hesitate to reach
