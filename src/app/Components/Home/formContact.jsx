@@ -357,7 +357,7 @@ function FormContact() {
     setSuccess("");
   
     try {
-      const response = await fetch('api/sendmail', {
+      const response = await fetch('/api/sendmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
