@@ -15,14 +15,14 @@ function AlfiLegal() {
       className="z-0"
     /> */}
     <div className=" w-[758px] z-10 my-10">
-      <div className='mt-5'>
-        <h1 className="font-[600] text-[55px] text-white leading-[74.71px] uppercase">Alfi legal</h1>
+      <div className='md:mt-5 m-5'>
+        <h1 className="font-[600] md:text-[55px] text-[20px] text-white md:leading-[74.71px] leading-[50.71px] uppercase">Alfi legal</h1>
         <div className="border-t-4 border-indigo-500 w-full"></div>
-        <h4 className="font-[600] text-[34px] text-white leading-[36.36px] uppercase text-right mt-4">Investment Solutions</h4>
+        <h4 className="font-[600]  md:text-[34px] text-[15px] text-white leading-[36.36px] uppercase text-right md:mt-4 mt-2">Investment Solutions</h4>
       </div>
-      <div className='my-5 text-center text-white'>
-        <h1 className='font-[400] text-[45px] text-white leading-[63px]'>Lawyers & Investment Advisors</h1>
-        <h1 className='font-[500] text-[22.22px] text-white leading-[33.82px]'><span className='text-[#F0AE1F]'>Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit, sed do <span className='text-[#F0AE1F]'>eiusmod .</span></h1>
+      <div className='my-5 text-start m-3 text-white'>
+        <h1 className='font-[400] md:text-[45px] text-white leading-[63px] font-[Marcellus] text-center'>Lawyers & Investment Advisors</h1>
+        <h1 className='font-[500] md:text-[22.22px] text-white leading-[33.82px]'><span className='text-[#F0AE1F] md:p-0 p-1'>Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit, sed do <span className='text-[#F0AE1F]'>eiusmod .</span></h1>
       </div>
     </div>
   </div>

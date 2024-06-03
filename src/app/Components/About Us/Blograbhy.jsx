@@ -4,10 +4,10 @@ import Image from 'next/image'
 function Blograbhy() {
   return (
 <section className="text-gray-600 body-font">
-  <div className="container px-5 py-24 mx-auto flex flex-wrap justify-center">
-    <div className='flex flex-col -mx-4 lg:w-1/2 sm:w-2/3 content-start sm:pr-10'>
+  <div className="container px-5 md:py-24 py-10 mx-auto flex flex-wrap justify-center">
+    <div className='flex flex-col -mx-4 lg:w-1/2 w-full text-start content-start sm:pr-10'>
         <h3 className='uppercase font-[500] text-[12.6px] leading-[12.6px]'>Biography</h3>
-        <div className='mt-7 w-full'>
+        <div className='mt-7 w-full mb-5'>
             <p className='font-[400] text-[20.05px] leading-[35px]'>
                 Al Alfi Legal Firm 
                 <strong>advises business endeavors on transactional matters, commercial contracts</strong> , and 
@@ -20,7 +20,7 @@ function Blograbhy() {
             </p>
         </div>
     </div>
-    <div className="lg:w-[445px] sm:w-1/2 lg:h-[360px] w-full overflow-hidden mt-6 sm:mt-0">
+    <div className="lg:w-[445px] sm:w-1/2 lg:h-[360px] w-full mx-auto overflow-hidden mt-6 sm:mt-0">
       <Image className="object-cover object-center w-full h-full" src={Blography} alt="statsc"/>
     </div>
   </div>

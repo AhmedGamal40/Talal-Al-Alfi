@@ -6,7 +6,7 @@ function TopHeader() {
   return (
     <div className='bg-[rgba(27,39,69,1)]'>
         <div className="container mx-auto">
-            <div className='flex space-x-4 justify-end text-white py-4'>
+            <div className='flex space-x-4 md:justify-end justify-center text-white py-4'>
                 <div className='flex space-x-2'>
                     <MdOutlinePhone className='my-auto'/> 
                     <span> +966 544 405 158 </span>

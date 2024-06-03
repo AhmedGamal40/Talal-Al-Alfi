@@ -176,6 +176,11 @@
 import Image from "next/image";
 import React from "react";
 import image1 from "../../../../public/Assets/Images/image1.png";
+import image2 from "../../../../public/Assets/Images/image2.png";
+import image3 from "../../../../public/Assets/Images/image3.png";
+import image4 from "../../../../public/Assets/Images/image4.png";
+import image5 from "../../../../public/Assets/Images/image5.png";
+import image6 from "../../../../public/Assets/Images/image6.png";
 import Link from "next/link";
 
 function AllExpertise() {
@@ -183,36 +188,42 @@ function AllExpertise() {
     {
       title: "CORPORATES",
       imageUrl: image1,
+      pathUrl:'/expertise/expertise1'
     },
     {
       title: "DISPUTE RESOLUTIONS",
-      imageUrl: image1,
+      imageUrl: image2,
+      pathUrl:'/expertise/expertise2'
     },
     {
       title: "FINANCIAL SECTOR",
-      imageUrl: image1,
+      imageUrl: image3,
+      pathUrl:'/expertise/expertise3'
     },
     {
       title: "FIN-TECHS & STARTUPS",
-      imageUrl: image1,
+      imageUrl: image4,
+      pathUrl:'/expertise/expertise4' 
     },
     {
       title: "REAL ESTATE ORGANIZATIONS",
-      imageUrl: image1,
+      imageUrl: image5,
+      pathUrl:'/expertise/expertise5'
     },
     {
       title: "TECHNOLOGIES",
-      imageUrl: image1,
+      imageUrl: image6,
+      pathUrl:'/expertise/expertise6'
     },
   ];
 
   return (
     <div className="container mx-auto my-20">
       <div className="my-20">
-        <h3 className="text-[#838386] font-[500] text-[15.14px] leading-[15.14px] uppercase mb-5">
+        <h3 className="text-[#838386] font-[500] text-[15.14px] leading-[15.14px] uppercase m-3 md:text-start mb-5">
           EXPERTISE
         </h3>
-        <p className="w-2/4 text-[#464649] font-[400] text-[32px] leading-[46.75px]">
+        <p className="lg:w-2/4 md:w-3/4 w-full p-3 text-start text-[#464649] font-[400] text-[20px] md:leading-[46.75px] leading-[30.75px]">
           Combine extensive knowledge and
           <strong> experience across a range of sectors </strong>, to
           <strong> provide legal insight and guidance</strong> on complex
@@ -220,14 +231,14 @@ function AllExpertise() {
         </p>
       </div>
       <div>
-        <h3 className="text-[#838386] font-[500] text-[15.14px] leading-[15.14px] uppercase mb-5">
+        <h3 className="text-[#838386] font-[500] text-[15.14px] leading-[15.14px] uppercase m-3 text-start mb-5">
           Sectors such as :
         </h3>
       </div>
       <div className="px-4 py-8 bg-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {sectors.map((sector, index) => (
-            <Link href="/about-us" key={index}>
+            <Link href={sector.pathUrl} key={index}>
               <div
                 key={index}
                 className="relative hover:text-[#2c3e50] text-white h-48 flex items-center justify-center text-2xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105"

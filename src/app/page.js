@@ -1,9 +1,11 @@
 import Image from "next/image";
 import AlfiLegal from "./Components/Home/alfiLegal";
-import VideoGallery from "./Components/Home/VideoGallery";
+// import VideoGallery from "./Components/Home/VideoGallery";
 import FormContact from "./Components/Home/formContact";
 import Expertise from "./Components/Home/Expertise";
 import coverImage from "../../public/Assets/Images/cover.png";
+import Footer from "./Components/Layout/Footer";
+import Communication from "./Components/Layout/Communication";
 export default function Home() {
   return (
     <>
@@ -19,8 +21,10 @@ export default function Home() {
     <div className="relative z-10">
       <AlfiLegal />
       <Expertise />
-      <VideoGallery />
+      {/* <VideoGallery /> */}
       <FormContact />
+      {/* <Footer/> */}
+      {/* <Communication /> */}
     </div>
     </div>
     </>

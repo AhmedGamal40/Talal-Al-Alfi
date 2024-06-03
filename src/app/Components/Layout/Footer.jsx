@@ -7,7 +7,7 @@ function Footer() {
   return (
     
 
- <footer className="bg-[rgba(27,39,69,1)]">
+ <footer className="bg-[rgba(27,39,69,1)] mb-20">
     <div className=" mx-auto p-6 flex md:flex-row flex-col-reverse justify-center md:justify-around" >
         <span className=" text-sm text-white text-center md:mt-0 mt-5">© 2024 Alfi . All Rights Reserved.</span>
         <div>
