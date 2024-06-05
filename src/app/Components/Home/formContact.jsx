@@ -283,17 +283,249 @@
 // export default FormContact;
 
 
-"use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import Logo from "../../../../public/Assets/Images/logo2.png";
+// "use client";
+// import React, { useState } from "react";
+// import Image from "next/image";
+// import Logo from "../../../../public/Assets/Images/logo2.png";
+
+// const initialValue = {
+//   firstName: "",
+//   lastName: "",
+//   email: "",
+//   subject: "",
+//   message: ""
+// };
+
+// const initialState = { values: initialValue };
+
+// function FormContact() {
+//   const [state, setState] = useState(initialState);
+//   const [touched, setTouched] = useState({});
+//   const [isLoading, setIsLoading] = useState(false);
+//   const [error, setError] = useState("");
+//   const [success, setSuccess] = useState("");
+
+//   const onBlur = ({ target }) =>
+//     setTouched((prev) => ({
+//       ...prev,
+//       [target.name]: true
+//     }));
+
+//   const { values } = state;
+
+//   const handleChange = ({ target }) =>
+//     setState((prev) => ({
+//       ...prev,
+//       values: {
+//         ...prev.values,
+//         [target.name]: target.value
+//       }
+//     }));
+
+//   // const onSubmit = async (e) => {
+//   //   e.preventDefault();
+//   //   setIsLoading(true);
+//   //   setError("");
+//   //   setSuccess("");
+
+//   //   try {
+//   //     const response = await fetch('/api/sendmail', {
+//   //       method: 'POST',
+//   //       headers: {
+//   //         'Content-Type': 'application/json',
+//   //       },
+//   //       body: JSON.stringify(values),
+//   //     });
+
+//   //     if (!response.ok) {
+//   //       throw new Error('Failed to send email');
+//   //     }
+
+//   //     setSuccess("Email sent successfully!");
+//   //     setState(initialState); // Reset the form
+//   //   } catch (error) {
+//   //     setError(error.message);
+//   //   } finally {
+//   //     setIsLoading(false);
+//   //   }
+//   // };
+
+//   // const onSubmit = async (e) => {
+//   //   e.preventDefault();
+//   //   setIsLoading(true);
+//   //   setError("");
+//   //   setSuccess("");
+  
+//   //   try {
+//   //     const response = await fetch('/api/sendmail', {
+//   //       method: 'POST',
+//   //       headers: {
+//   //         'Content-Type': 'application/json',
+//   //       },
+//   //       body: JSON.stringify(values),
+//   //     });
+  
+//   //     if (!response.ok) {
+//   //       const errorData = await response.json();
+//   //       throw new Error(errorData.error);
+//   //     }
+  
+//   //     // Check if response body is empty
+//   //     const contentType = response.headers.get('content-type');
+//   //     if (contentType && contentType.includes('application/json')) {
+//   //       const responseData = await response.json();
+//   //       setSuccess(responseData.message); // Assuming the response contains a success message
+//   //       setState(initialState); // Reset the form
+//   //     } else {
+//   //       // Handle case where response body is empty
+//   //       setSuccess("Email sent successfully!");
+//   //       setState(initialState); // Reset the form
+//   //     }
+//   //   } catch (error) {
+//   //     setError(error.message);
+//   //   } finally {
+//   //     setIsLoading(false);
+//   //   }
+//   // };
+
+//   const onSubmit = async (e) => {
+//     e.preventDefault();
+//     setIsLoading(true);
+//     setError("");
+//     setSuccess("");
+  
+//     try {
+//       const response = await fetch('/api/sendEmail', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(values),
+//       });
+  
+//       if (!response.ok) {
+//         const errorData = await response.json();
+//         throw new Error(errorData.error);
+//       }
+  
+//       setSuccess("Email sent successfully!");
+//       setState(initialState); // Reset the form
+//     } catch (error) {
+//       setError(error.message);
+//     } finally {
+//       setIsLoading(false);
+//     }
+//   };
+
+//   return (
+//     <div className="flex md:justify-around justify-center md:flex-row flex-col mt-20 pb-20">
+//       <div className="md:w-1/2 my-10 lg:px-20 px-10 items-center text-start text-[#C2C2C2]">
+//         If you’re seeking personalized legal advice, don’t hesitate to reach out for expert counsel tailored to your specific needs and circumstances.
+//       </div>
+      
+//       <div className="bg-white p-10 mx-auto shadow-lg w-full max-w-lg">
+//         <div className="text-center mb-8">
+//           <Image src={Logo} alt="Logo" />
+//         </div>
+//         <form onSubmit={onSubmit}>
+//           <div className="flex mb-4">
+//             <div className="w-1/2 pr-2">
+//               <input
+//                 type="text"
+//                 name="firstName"
+//                 value={values.firstName}
+//                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+//                 placeholder="First Name"
+//                 required
+//                 onChange={handleChange}
+//                 onBlur={onBlur}
+//               />
+//             </div>
+//             <div className="w-1/2 pl-2">
+//               <input
+//                 type="text"
+//                 name="lastName"
+//                 value={values.lastName}
+//                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+//                 placeholder="Last Name"
+//                 required
+//                 onChange={handleChange}
+//                 onBlur={onBlur}
+//               />
+//             </div>
+//           </div>
+//           <div className="mb-4">
+//             <input
+//               type="email"
+//               name="email"
+//               value={values.email}
+//               className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+//               placeholder="Email Address"
+//               required
+//               onChange={handleChange}
+//               onBlur={onBlur}
+//             />
+//           </div>
+//           <div className="mb-4">
+//             <input
+//               type="text"
+//               name="subject"
+//               value={values.subject}
+//               className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+//               placeholder="Subject"
+//               required
+//               onChange={handleChange}
+//               onBlur={onBlur}
+//             />
+//           </div>
+//           <div className="mb-4">
+//             <textarea
+//               name="message"
+//               value={values.message}
+//               className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
+//               placeholder="Message"
+//               rows="5"
+//               required
+//               onChange={handleChange}
+//               onBlur={onBlur}
+//             ></textarea>
+//           </div>
+//           <button
+//             type="submit"
+//             className="w-full bg-blue-600 text-white py-2 hover:bg-blue-700 transition duration-300"
+//             disabled={
+//               isLoading ||
+//               !values.firstName ||
+//               !values.lastName ||
+//               !values.email ||
+//               !values.subject ||
+//               !values.message
+//             }
+//           >
+//             {isLoading ? "Submitting..." : "Submit"}
+//           </button>
+//           {error && <p className="text-red-500 mt-2">{error}</p>}
+//           {success && <p className="text-green-500 mt-2">{success}</p>}
+//         </form>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default FormContact;
+
+
+"use client"
+import React, { useState } from 'react';
+import Image from 'next/image';
+import Logo from '../../../../public/Assets/Images/logo2.png';
 
 const initialValue = {
-  firstName: "",
-  lastName: "",
-  email: "",
-  subject: "",
-  message: ""
+  firstName: '',
+  lastName: '',
+  email: '',
+  subject: '',
+  message: '',
 };
 
 const initialState = { values: initialValue };
@@ -302,99 +534,59 @@ function FormContact() {
   const [state, setState] = useState(initialState);
   const [touched, setTouched] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
   const onBlur = ({ target }) =>
     setTouched((prev) => ({
       ...prev,
-      [target.name]: true
+      [target.name]: true,
     }));
-
-  const { values } = state;
 
   const handleChange = ({ target }) =>
     setState((prev) => ({
       ...prev,
       values: {
         ...prev.values,
-        [target.name]: target.value
-      }
+        [target.name]: target.value,
+      },
     }));
-
-  // const onSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setIsLoading(true);
-  //   setError("");
-  //   setSuccess("");
-
-  //   try {
-  //     const response = await fetch('/api/sendmail', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify(values),
-  //     });
-
-  //     if (!response.ok) {
-  //       throw new Error('Failed to send email');
-  //     }
-
-  //     setSuccess("Email sent successfully!");
-  //     setState(initialState); // Reset the form
-  //   } catch (error) {
-  //     setError(error.message);
-  //   } finally {
-  //     setIsLoading(false);
-  //   }
-  // };
 
   const onSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    setError("");
-    setSuccess("");
-  
+    setError('');
+    setSuccess('');
+
     try {
-      const response = await fetch('/api/sendmail', {
+      const response = await fetch('/api/sendEmail', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(values),
+        body: JSON.stringify(state.values),
       });
-  
+
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.error);
       }
-  
-      // Check if response body is empty
-      const contentType = response.headers.get('content-type');
-      if (contentType && contentType.includes('application/json')) {
-        const responseData = await response.json();
-        setSuccess(responseData.message); // Assuming the response contains a success message
-        setState(initialState); // Reset the form
-      } else {
-        // Handle case where response body is empty
-        setSuccess("Email sent successfully!");
-        setState(initialState); // Reset the form
-      }
+
+      setSuccess('Email sent successfully!');
+      setState(initialState); // Reset the form
     } catch (error) {
       setError(error.message);
     } finally {
       setIsLoading(false);
     }
   };
-  
 
   return (
     <div className="flex md:justify-around justify-center md:flex-row flex-col mt-20 pb-20">
       <div className="md:w-1/2 my-10 lg:px-20 px-10 items-center text-start text-[#C2C2C2]">
         If you’re seeking personalized legal advice, don’t hesitate to reach out for expert counsel tailored to your specific needs and circumstances.
       </div>
-      
+
       <div className="bg-white p-10 mx-auto shadow-lg w-full max-w-lg">
         <div className="text-center mb-8">
           <Image src={Logo} alt="Logo" />
@@ -405,7 +597,7 @@ function FormContact() {
               <input
                 type="text"
                 name="firstName"
-                value={values.firstName}
+                value={state.values.firstName}
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
                 placeholder="First Name"
                 required
@@ -417,7 +609,7 @@ function FormContact() {
               <input
                 type="text"
                 name="lastName"
-                value={values.lastName}
+                value={state.values.lastName}
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
                 placeholder="Last Name"
                 required
@@ -430,7 +622,7 @@ function FormContact() {
             <input
               type="email"
               name="email"
-              value={values.email}
+              value={state.values.email}
               className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
               placeholder="Email Address"
               required
@@ -442,7 +634,7 @@ function FormContact() {
             <input
               type="text"
               name="subject"
-              value={values.subject}
+              value={state.values.subject}
               className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
               placeholder="Subject"
               required
@@ -453,7 +645,7 @@ function FormContact() {
           <div className="mb-4">
             <textarea
               name="message"
-              value={values.message}
+              value={state.values.message}
               className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600"
               placeholder="Message"
               rows="5"
@@ -464,17 +656,17 @@ function FormContact() {
           </div>
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 hover:bg-blue-700 transition duration-300"
+            className="w-full bg-[#1B2745] text-white py-2 hover:bg-blue-700 transition duration-300"
             disabled={
               isLoading ||
-              !values.firstName ||
-              !values.lastName ||
-              !values.email ||
-              !values.subject ||
-              !values.message
+              !state.values.firstName ||
+              !state.values.lastName ||
+              !state.values.email ||
+              !state.values.subject ||
+              !state.values.message
             }
           >
-            {isLoading ? "Submitting..." : "Submit"}
+            {isLoading ? 'Submitting...' : 'Submit'}
           </button>
           {error && <p className="text-red-500 mt-2">{error}</p>}
           {success && <p className="text-green-500 mt-2">{success}</p>}

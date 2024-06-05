@@ -35,7 +35,7 @@ function Navbar() {
             </Link>
           </div>
           {/* Menu Button for Mobile */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none mt-8 mb-12"
@@ -44,8 +44,8 @@ function Navbar() {
             </button>
           </div>
           {/* Links */}
-          <div className={`w-full md:flex md:items-center md:w-auto hidden`}>
-            <ul className="md:flex lg:space-x-14 md:space-x-4 text-white uppercase space-y-2 md:space-y-0">
+          <div className={`w-full lg:flex md:items-center md:w-auto hidden`}>
+            <ul className="md:flex lg:space-x-10 md:space-x-4 text-white uppercase space-y-2 md:space-y-0">
               <li className="mt-2 md:mt-0">
                 <Link
                   href="/"
@@ -88,6 +88,16 @@ function Navbar() {
               </li>
               <li className="mt-2 md:mt-0">
                 <Link
+                  href="/blog"
+                  className={`link ${
+                    pathname === "/blog" ? "text-yellow-500" : ""
+                  }`}
+                >
+                  Blog
+                </Link>
+              </li>
+              <li className="mt-2 md:mt-0">
+                <Link
                   href="/contact-us"
                   className={`link ${
                     pathname === "/contact-us" ? "text-yellow-500" : ""
@@ -104,7 +114,7 @@ function Navbar() {
           </div>
         </div>
         {isOpen && (
-          <div className="md:hidden mt-4 px-2 space-y-2 ">
+          <div className="lg:hidden mt-4 px-2 space-y-2 ">
             <ul className="text-white uppercase flex flex-col justify-center items-center">
               <li>
                 <Link
@@ -144,6 +154,16 @@ function Navbar() {
                   }`}
                 >
                   Video Gallery
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className={`block px-3 py-2 rounded-md ${
+                    pathname === "/blog" ? "text-yellow-500" : ""
+                  }`}
+                >
+                  Blog
                 </Link>
               </li>
               <li>

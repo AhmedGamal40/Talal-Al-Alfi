@@ -87,13 +87,13 @@ function Expertise() {
       </div>
       <div>
       </div>
-      <div className="px-4 py-8 ">
+      {/* <div className="px-4 py-8 ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {sectors.map((sector, index) => (
             <Link href={sector.pathUrl} key={index}>
               <div
                 key={index}
-                className="relative hover:text-[#2c3e50] text-white h-48 flex items-start justify-start text-start  text-2xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105"
+                className="relative  hover:text-[#2c3e50] text-white h-48 flex items-start justify-start text-start  text-2xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105"
               >
                 <Image
                   src={sector.imageUrl}
@@ -102,15 +102,52 @@ function Expertise() {
                   objectFit="cover"
                   className="absolute inset-0 z-0 transition-opacity duration-300 ease-in-out"
                 />
-                <div className="absolute inset-0 bg-[#F0AE1FD9] opacity-0 hover:opacity-[90%] z-10 transition-opacity duration-300 ease-in-out"></div>
+                <div className="absolute inset-0 bg-[#F0AE1FD9] opacity-0 hover:opacity-[90%] z-10 "></div>
                 <span className="relative px-5 z-20 underline top-1/2  underline-offset-[16px]">
                   {sector.title}
-                </span>
+                </span> */}
                 {/* <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 h-1 w-32 hover:bg-[#2c3e50] z-20 bg-white"></div> */}
+              {/* </div>
+            </Link>
+          ))}
+        </div>
+      </div> */}
+        <div className="px-4 py-8 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {sectors.map((sector, index) => (
+            <Link href={sector.pathUrl} key={index} className='hover:text-[#2c3e50] text-white group relative'>
+              <div
+                key={index}
+                className="relative h-48 flex items-start justify-start text-start text-2xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105"
+              >
+                <Image
+                  src={sector.imageUrl}
+                  alt={sector.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="absolute inset-0 z-0 transition-opacity duration-300 ease-in-out"
+                />
+                <div className="absolute inset-0 bg-[#F0AE1FD9] opacity-0 hover:opacity-[85%] group-hover:bg-[#F0AE1F] transition duration-300"></div>
+                <span className="relative inline-block font-[700] text-[20px] md:text-[32px] md:leading-[52.44px] leading-[30.44px]  px-2 z-20 my-auto md:w-[300px] w-[100px">
+                  {sector.title}
+                  {/* <hr className='w-1/3 transition-all duration-300 group-hover:w-[183px] mt-3'/> */}
+                  {/* <hr className='w-1/3 transition-all duration-300 group-hover:w-[183px] mt-3 bg-red-500'/> */}
+                  <div className='w-[100px] transition-all duration-300 md:group-hover:w-[250px]  group-hover:w-full mt-3 group-hover:bg-[#1B2745] bg-[#F0AE1FD9] h-[2px] '></div>
+                </span>
               </div>
             </Link>
           ))}
         </div>
+
+        {/* <div className="grid grid-cols-3 gap-4">
+  <div className="group relative bg-cover bg-center h-40 w-64 z-20" style={{ backgroundImage: "url('../../../../public/Assets/Images/image1.png')" }}>
+    <div className="absolute inset-0 bg-blue-800 bg-opacity-75 group-hover:bg-yellow-500 transition duration-300"></div>
+    <div className="relative z-10 flex items-center justify-center h-full">
+      <span className="text-white text-xl font-bold group-hover:text-blue-800">CORPORATES</span>
+    </div>
+  </div>
+</div> */}
+
       </div>
     </div>
     </>

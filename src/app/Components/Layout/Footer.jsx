@@ -13,16 +13,16 @@ function Footer() {
         <div>
         <ul className="flex justify-center  space-x-6 items-center text-sm font-medium text-gray-500 sm:mb-0 ">
                 <li>
-                    <a href="#" ><FaLinkedin className='text-white' size={20}/></a>
+                    <a href="https://sa.linkedin.com/in/talal-alfi" target='_blank'><FaLinkedin className='text-white' size={20}/></a>
                 </li>
                 <li>
-                    <a href="#" ><IoLogoYoutube className='text-white' size={20}/></a>
+                    <a href="https://www.youtube.com/@Alfi" target='_blank'><IoLogoYoutube className='text-white' size={20}/></a>
                 </li>
                 <li>
-                    <a href="#" ><FaInstagram className='text-white' size={20}/></a>
+                    <a href="https://www.instagram.com/talal.alfi/" target='_blank'><FaInstagram className='text-white' size={20}/></a>
                 </li>
                 <li>
-                    <a href="#" ><IoMail className='text-white' size={20}/></a>
+                    <a href="mailto:tlal@alfilegal.com" target='_blank'><IoMail className='text-white' size={20}/></a>
                 </li>
             </ul>
         </div>

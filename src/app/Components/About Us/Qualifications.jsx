@@ -21,12 +21,12 @@ function Qualifications() {
     <div className="  z-10 my-10">
       {/* Text */}
       <div className='mt-7 text-start'>
-        <h1 className="font-[600] text-[29.61px] text-white leading-[47.38px] uppercase m-3">Qualifications</h1>
+        <h1 className="font-[600] text-[29.61px] text-white leading-[47.38px] md:text-center text-start  uppercase m-3">Qualifications</h1>
         <h4 className="font-[500] text-[19px] text-[#C8C8C8] leading-[23.69px]  lg:px-80 md:px-10 px-3 mt-5">Our leader’s mixed experience as in-house counsel and external lawyer, along with their extensive education and history, has enabled them to stand out among the best lawyers.</h4>
       </div>
       {/* Logos */}
 <section class="text-gray-600 body-font">
-  <div class="container px-5 lg:py-24 py-15 mx-auto">
+  <div class="container px-5 lg:py-4 py-15 mx-auto">
     <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 lg:divide-x divide-gray-500 space-y-10 md:my-40 mt-20">
       <div className="flex flex-col justify-center items-center  h-full">
         <div className="flex flex-col items-center">
