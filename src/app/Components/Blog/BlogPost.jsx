@@ -1,18 +1,5 @@
-// import React from "react";
-
-// function page({ params }) {
-//   return (
-//     <>
-//       <div key={params.blogId}>Blog {params.blogId}</div>
-//     </>
-//   );
-// }
-
-// export default page;
-
- "use client";
 import React from "react";
-import { useParams } from "next/navigation";
+import { useRouter } from "next/router";
 import blog1 from "../../../../public/Assets/Images/blog1.png";
 import blog2 from "../../../../public/Assets/Images/blog2.png";
 import blog3 from "../../../../public/Assets/Images/blog3.png";
@@ -90,10 +77,10 @@ const data = [
   },
 ];
 
-const Page = () => {
-  const params = useParams();
-  const { blogId } = params;
-  const blog = data.find((item) => item.id === parseInt(blogId));
+const BlogPost = () => {
+  const router = useRouter();
+  const { id } = router.query;
+  const blog = data.find((item) => item.id === parseInt(id));
 
   if (!blog) {
     return <div>Blog post not found</div>;
@@ -119,4 +106,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default BlogPost;
