@@ -82,16 +82,13 @@ const BlogPost = () => {
   const { id } = router.query;
   const blog = data.find((item) => item.id === parseInt(id));
 
-  if (!blog) {
-    return <div>Blog post not found</div>;
-  }
+  // if (!blog) {
+  //   return <div>Blog post not found</div>;
+  // }
 
   return (
     <div className="container mx-auto my-8">
       <div className="py-4">
-        <div className="rounded text-white bg-gray-700 py-1 px-2">
-          {blog.name}
-        </div>
         <div className="h-[288.75px] overflow-hidden my-4">
           <Image
             src={blog.image}
@@ -99,8 +96,8 @@ const BlogPost = () => {
             className="h-full w-full object-cover"
           />
         </div>
-        <h1 className="text-2xl font-bold my-4">{blog.title}</h1>
-        <p className="text-gray-700">{blog.desc}</p>
+        {/* <h1 className="text-2xl font-bold my-4">{blog.title}</h1> */}
+        {/* <p className="text-gray-700">{blog.desc}</p> */}
       </div>
     </div>
   );

@@ -5,6 +5,8 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { IoGlobeOutline } from "react-icons/io5";
 import { MdMenu, MdClose } from "react-icons/md";
+import { TfiMenuAlt } from "react-icons/tfi";
+
 import coverImage from "../../../../public/Assets/Images/cover.png";
 import logo from "../../../../public/Assets/Images/talal.png";
 
@@ -40,7 +42,7 @@ function Navbar() {
               onClick={toggleMenu}
               className="text-white focus:outline-none mt-8 mb-12"
             >
-              {isOpen ? <MdClose size={25} /> : <MdMenu size={25} />}
+              {isOpen ? <MdClose size={25} /> : <TfiMenuAlt size={25} />}
             </button>
           </div>
           {/* Links */}

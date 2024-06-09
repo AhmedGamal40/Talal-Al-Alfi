@@ -1,13 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-   // Enable API routes
-   api: {
-    // Enable API routes
-    enabled: true,
-  },
-};
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//    // Enable API routes
+//    api: {
+//     // Enable API routes
+//     enabled: true,
+//   },
+// };
 
-export default nextConfig;
+// export default nextConfig;
 
 
 // module.exports = {
@@ -26,3 +26,14 @@ export default nextConfig;
 //       ],
 //     },
 //   };
+
+
+
+// next.config.mjs
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+}
+
+export default nextConfig
