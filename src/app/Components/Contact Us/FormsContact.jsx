@@ -12,7 +12,6 @@ function FormsContact() {
           circumstances.
         </div>
         {/* form */}
-        {/* form */}
         <div className=" bg-white p-10 mx-auto shadow-lg w-full max-w-lg">
           <div className="text-center mb-8">
             <Image src={Logo} alt="Logo" />

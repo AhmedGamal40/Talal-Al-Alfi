@@ -552,34 +552,34 @@ function FormContact() {
       },
     }));
 
-  const onSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoading(true);
-    setError('');
-    setSuccess('');
+  // const onSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setIsLoading(true);
+  //   setError('');
+  //   setSuccess('');
 
-    try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(state.values),
-      });
+  //   try {
+  //     const response = await fetch('/api/sendEmail', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(state.values),
+  //     });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error);
-      }
+  //     if (!response.ok) {
+  //       const errorData = await response.json();
+  //       throw new Error(errorData.error);
+  //     }
 
-      setSuccess('Email sent successfully!');
-      setState(initialState); // Reset the form
-    } catch (error) {
-      setError(error.message);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  //     setSuccess('Email sent successfully!');
+  //     setState(initialState); // Reset the form
+  //   } catch (error) {
+  //     setError(error.message);
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
 
   return (
     <div className="flex md:justify-around justify-center md:flex-row flex-col mt-20 pb-20">
@@ -591,7 +591,7 @@ function FormContact() {
         <div className="text-center mb-8">
           <Image src={Logo} alt="Logo" />
         </div>
-        <form onSubmit={onSubmit}>
+        <form >
           <div className="flex mb-4">
             <div className="w-1/2 pr-2">
               <input
