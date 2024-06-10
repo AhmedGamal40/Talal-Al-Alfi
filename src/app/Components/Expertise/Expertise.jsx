@@ -76,7 +76,7 @@ function AllExpertise() {
               className="absolute inset-0 z-0 transition-opacity duration-300 ease-in-out"
             />
             <div className="absolute inset-0 bg-[#F0AE1FD9] opacity-0  group-hover:opacity-[85%] transition duration-300"></div>
-            <span className="relative font-[700] text-[20px] md:text-[32px] md:leading-[52.44px] leading-[30.44px]  px-2 z-20 my-auto md:w-[300px] w-[100px">
+            <span className="relative font-[700] text-[20px] md:text-[32px] md:leading-[30.44px] leading-[20.44px] px-2 z-20 my-auto md:w-[300px] w-[100px">
               {sector.title}
               <div className='w-[100px] transition-all duration-300 md:group-hover:w-[250px]  group-hover:w-full mt-3 group-hover:bg-[#1B2745] bg-[#F0AE1FD9] h-[2px] '></div>
             </span>

@@ -34,6 +34,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  env: {
+    LOCAL_HOST: process.env.LOCAL_HOST,
+  },
 }
 
 export default nextConfig

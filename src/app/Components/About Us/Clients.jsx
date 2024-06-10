@@ -24,7 +24,8 @@ function Clients() {
         <section className="bg-white">
           <div className="container  py-6 mx-auto">
             <div className="grid grid-cols-1 gap-8 xl:gap-4 md:grid-cols-2 xl:grid-cols-3 md:mt-20 mt-10">
-              <div className="flex flex-col items-center space-y-3 text-center rounded-xl ">
+
+              {/* <div className="flex flex-col items-center space-y-3 text-center rounded-xl ">
                 <span className="inline-block p-3 text-gray-200 bg-[#F0AE1F] rounded-full ">
                   <Image src={Icone1} alt="Icone1" />
                 </span>
@@ -34,6 +35,21 @@ function Clients() {
                 </h1>
                 <p className="text-gray-600 ">
                   {" "}
+                  Advising Al-Khair Capital on setting up REITs amounting to SR.
+                  1 Billion in value.{" "}
+                </p>
+              </div> */}
+
+              <div className="flex flex-col items-center space-y-3 text-center rounded-xl ">
+                <span className="inline-block p-3 text-gray-200 bg-[#F0AE1F] rounded-full ">
+                  <Image src={Icone1} alt="Icone1" />
+                </span>
+                <h1 className="text-xl font-bold text-gray-700 ">
+                  {" "}
+                  Capital Market Institutions
+                </h1>
+                <p className="text-gray-600  md:w-[340px] w-[266px]">
+                {" "}
                   Advising Al-Khair Capital on setting up REITs amounting to SR.
                   1 Billion in value.{" "}
                 </p>
@@ -48,7 +64,7 @@ function Clients() {
                   {" "}
                   Insurance Companies
                 </h1>
-                <p className="text-gray-600 ">
+                <p className="text-gray-600  md:w-[340px] w-[266px]">
                   {" "}
                   Advising Al-Tawauniya Cooperative Insurance on its acquisition
                   of a financing Company
@@ -63,7 +79,7 @@ function Clients() {
                   {" "}
                   Capital Market Institutions
                 </h1>
-                <p className="text-gray-600 ">
+                <p className="text-gray-600 w-[266.24px]">
                   Advising UBS on its securities dealing activities in KSA
                 </p>
               </div>
@@ -78,7 +94,7 @@ function Clients() {
                   {" "}
                   Real Estate Developers
                 </h1>
-                <p className="text-gray-600 ">
+                <p className="text-gray-600  md:w-[320px] w-[266px]">
                   {" "}
                   Consulting leading real estate developers on their landmark
                   projects, including Rafal.{" "}
@@ -95,7 +111,7 @@ function Clients() {
                 <h1 className="text-xl font-bold text-gray-700 ">
                   Government Agencies
                 </h1>
-                <p className="text-gray-600 ">
+                <p className="text-gray-600 md:w-[320px] w-[266px]">
                   {" "}
                   Representing the government of Saudi Arabia in its real estate
                   privatization contract.

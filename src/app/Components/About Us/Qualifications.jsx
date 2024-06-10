@@ -27,16 +27,18 @@ function Qualifications() {
       {/* Logos */}
 <section class="text-gray-600 body-font">
   <div class="container px-5 lg:py-4 py-15 mx-auto">
-    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 lg:divide-x divide-gray-500 space-y-10 md:my-40 mt-20">
+
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 md:space-y-0 space-y-10 lg:divide-x divide-gray-500  md:my-40 mt-20">
       <div className="flex flex-col justify-center items-center  h-full">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           <Image src={Newyork} alt="New york logo" />
           <h2 className="text-white font-[500] text-[16px] leading-[22.04px] md:mt-16 mt-6 ">Certified Master in Financial Derivatives</h2>
           <p className="text-[#F0AE1F] text-center md:mt-6 mt-3">New York Institute of Finance</p>
       </div>
     </div>
+
     <div className="flex flex-col justify-center items-center  h-full">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           <Image src={DAMA} alt="New york logo" />
           <h2 className="text-white font-[500] text-[16.53px] leading-[22.04px] md:mt-16 mt-6 ">Certified Privacy Law Professional</h2>
           <p className="text-[#F0AE1F] text-center md:mt-6 mt-3">New York Institute of Finance</p>
@@ -51,13 +53,14 @@ function Qualifications() {
     </div>
     <div className="flex flex-col justify-center items-center  h-full">
         <div className="flex flex-col items-center">
-          <Image src={SBA} alt="New york logo" />
-          <h2 className="text-white font-[500] text-[16.53px] leading-[22.04px] md:mt-16 mt-6 ">Certified Capital Market Lawyer</h2>
+          <Image src={SBA} alt="New york logo" className='w-36'/>
+          <h2 className="text-white font-[500] text-[16.53px] leading-[22.04px]  ">Certified Capital Market Lawyer</h2>
           <p className="text-[#F0AE1F] text-center md:mt-6 mt-3">Saudi Bar Association</p>
       </div>
     </div>
     </div>
-    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 space-y-10 lg:divide-x divide-gray-500 mt-20">
+
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:space-y-0 space-y-10 lg:divide-x divide-gray-500 mt-20 mb-20">
     <div className="flex flex-col justify-center items-center  h-full">
         <div className="flex flex-col items-center">
           <Image src={TFA} alt="New york logo" />
@@ -80,6 +83,7 @@ function Qualifications() {
       </div>
     </div>
     </div>
+    
   </div>
 </section>
     </div>
