@@ -94,6 +94,7 @@ import Footer from "./Components/Layout/Footer";
 import Head from "next/head";
 import { Josefin_Sans } from '@next/font/google';
 import Communication from "./Components/Layout/Communication";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -111,6 +112,7 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <Head>
+      <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
           rel="stylesheet"
