@@ -92,7 +92,8 @@ const getRandomPosts = (posts, count) => {
 
 const Page = () => {
   const { blogId } = useParams();
-  const urlToShare = encodeURIComponent(`${process.env.LOCAL_HOST}/blog/${blogId}`);
+  // const urlToShare = encodeURIComponent(`${process.env.LOCAL_HOST}/blog/${blogId}`);
+  const urlToShare = encodeURIComponent(`${process.env.HOST}/blog/${blogId}`);
   const blog = data.find((item) => item.id === parseInt(blogId, 10));
   const randomPosts = useMemo(() => getRandomPosts(data, 3), []);
 

@@ -35,7 +35,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   env: {
-    LOCAL_HOST: process.env.LOCAL_HOST,
+    LOCAL_HOST: 'http://localhost:3000',
+    HOST:"https://talal-al-alfi-r6qw.vercel.app"
   },
 }
 
