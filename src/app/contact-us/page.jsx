@@ -6,8 +6,6 @@ function ContactUs() {
   return (
     <>
        <FormsContact />
-       {/* <  Footer /> */}
-       {/* <Communication /> */}
     </>
   )
 }

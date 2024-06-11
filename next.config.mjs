@@ -36,8 +36,10 @@ const nextConfig = {
   swcMinify: true,
   env: {
     LOCAL_HOST: 'http://localhost:3000',
-    HOST:"https://talal-al-alfi-r6qw.vercel.app"
+    HOST: "https://talal-al-alfi-r6qw.vercel.app",
+    EMAIL_PASS: "MGse91#h8cSJseCO",
+    EMAIL_USER: "noreplay@alfilegal.com",
   },
 }
 
-export default nextConfig
+export default nextConfig;

@@ -11,34 +11,34 @@ import Link from "next/link";
 function AllExpertise() {
   const sectors = [
     {
+      id:1,
       title: "CORPORATES",
       imageUrl: image1,
-      pathUrl:'/expertise/expertise1'
     },
     {
+      id:2,
       title: "DISPUTE RESOLUTIONS",
       imageUrl: image2,
-      pathUrl:'/expertise/expertise2'
     },
     {
+      id:3,
       title: "FINANCIAL SECTOR",
       imageUrl: image3,
-      pathUrl:'/expertise/expertise3'
     },
     {
+      id:4,
       title: "FIN-TECHS & STARTUPS",
       imageUrl: image4,
-      pathUrl:'/expertise/expertise4' 
     },
     {
+      id:5,
       title: "REAL ESTATE ORGANIZATIONS",
       imageUrl: image5,
-      pathUrl:'/expertise/expertise5'
     },
     {
+      id:6,
       title: "TECHNOLOGIES",
       imageUrl: image6,
-      pathUrl:'/expertise/expertise6'
     },
   ];
 
@@ -63,7 +63,7 @@ function AllExpertise() {
       <div className="px-4 py-8 bg-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {sectors.map((sector, index) => (
-          <Link href={sector.pathUrl} key={index} className='hover:text-[#2c3e50] text-white group relative'>
+          <Link href={`expertise/${sector.id}`} key={index} className='hover:text-[#2c3e50] text-white group relative'>
           <div
             key={index}
             className="relative h-48 flex items-start justify-start text-start text-2xl font-bold transition-transform duration-300 ease-in-out transform hover:scale-105"

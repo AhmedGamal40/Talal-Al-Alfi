@@ -14,10 +14,10 @@ function TopHeader() {
                 </div>
                 </a>
                 <span className=''> . </span>
-                <a href="mailto:tlal@alfilegal.com" target="blank">
+                <a href="mailto:talal@alfilegal.com" target="blank">
                     <div className='flex space-x-2'>
                         <MdMailOutline className='my-auto'/> 
-                        <span> tlal@alfilegal.com</span>
+                        <span> talal@alfilegal.com</span>
                     </div>
                 </a>
             </div>

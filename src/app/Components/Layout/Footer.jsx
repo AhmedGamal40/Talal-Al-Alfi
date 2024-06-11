@@ -22,7 +22,7 @@ function Footer() {
                     <a href="https://www.instagram.com/talal.alfi/" target='_blank'><FaInstagram className='text-white' size={20}/></a>
                 </li>
                 <li>
-                    <a href="mailto:tlal@alfilegal.com" target='_blank'><IoMail className='text-white' size={20}/></a>
+                    <a href="mailto:talal@alfilegal.com" target='_blank'><IoMail className='text-white' size={20}/></a>
                 </li>
             </ul>
         </div>

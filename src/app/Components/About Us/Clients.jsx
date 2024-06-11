@@ -25,21 +25,6 @@ function Clients() {
           <div className="container  py-6 mx-auto">
             <div className="grid grid-cols-1 gap-8 xl:gap-4 md:grid-cols-2 xl:grid-cols-3 md:mt-20 mt-10">
 
-              {/* <div className="flex flex-col items-center space-y-3 text-center rounded-xl ">
-                <span className="inline-block p-3 text-gray-200 bg-[#F0AE1F] rounded-full ">
-                  <Image src={Icone1} alt="Icone1" />
-                </span>
-                <h1 className="text-xl font-bold text-gray-700 ">
-                  {" "}
-                  Capital Market Institutions
-                </h1>
-                <p className="text-gray-600 ">
-                  {" "}
-                  Advising Al-Khair Capital on setting up REITs amounting to SR.
-                  1 Billion in value.{" "}
-                </p>
-              </div> */}
-
               <div className="flex flex-col items-center space-y-3 text-center rounded-xl ">
                 <span className="inline-block p-3 text-gray-200 bg-[#F0AE1F] rounded-full ">
                   <Image src={Icone1} alt="Icone1" />
@@ -104,8 +89,6 @@ function Clients() {
               {/* Repeat for other items... */}
               <div className="flex flex-col items-center space-y-3 text-center rounded-xl ">
                 <span className="inline-block p-3 text-gray-200 bg-[#F0AE1F] rounded-full ">
-                  {/* <LiaHandHoldingUsdSolid className="w-8 h-8 text-[#1B2745]" /> */}
-                  {/* <Icone1 className="w-8 h-8 text-[#1B2745]"/> */}
                   <Image src={Icone4} alt="Icone1" />
                 </span>
                 <h1 className="text-xl font-bold text-gray-700 ">

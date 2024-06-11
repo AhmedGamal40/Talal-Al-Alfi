@@ -1,105 +1,40 @@
 import React from "react";
-import { useRouter } from "next/router";
-import blog1 from "../../../../public/Assets/Images/blog1.png";
-import blog2 from "../../../../public/Assets/Images/blog2.png";
-import blog3 from "../../../../public/Assets/Images/blog3.png";
-import blog4 from "../../../../public/Assets/Images/blog4.png";
-import blog5 from "../../../../public/Assets/Images/blog5.png";
-import blog6 from "../../../../public/Assets/Images/blog6.png";
-import blog7 from "../../../../public/Assets/Images/blog7.png";
-import blog8 from "../../../../public/Assets/Images/blog8.png";
-import blog9 from "../../../../public/Assets/Images/blog9.png";
-import Image from "next/image";
-
-const data = [
-  {
-    id: 1,
-    image: blog1,
-    title: "Lorem ipsum dolor sit amet",
-    name: "Lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-  {
-    id: 2,
-    image: blog2,
-    title: "Lorem ipsum dolor sit amet",
-    name: "Lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-  {
-    id: 3,
-    image: blog3,
-    title: "Lorem ipsum dolor sit amet",
-    name: "Lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-  {
-    id: 4,
-    image: blog4,
-    title: "Lorem ipsum dolor sit amet",
-    name: "Lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-  {
-    id: 5,
-    image: blog5,
-    title: "Lorem ipsum dolor sit amet",
-    name: "Lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-  {
-    id: 6,
-    image: blog6,
-    title: "Lorem ipsum dolor sit amet",
-    name: "Lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-  {
-    id: 7,
-    image: blog7,
-    title: "Lorem ipsum dolor sit amet",
-    name: "Lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-  {
-    id: 8,
-    image: blog8,
-    title: "Lorem ipsum dolor sit amet",
-    name: "Lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-  {
-    id: 9,
-    image: blog9,
-    title: "Lorem ipsum dolor sit amet",
-    name: "Lorem ipsum",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-];
+import { BiSolidQuoteRight } from "react-icons/bi";
 
 const BlogPost = () => {
-  const router = useRouter();
-  const { id } = router.query;
-  const blog = data.find((item) => item.id === parseInt(id));
-
-  // if (!blog) {
-  //   return <div>Blog post not found</div>;
-  // }
 
   return (
-    <div className="container mx-auto my-8">
-      <div className="py-4">
-        <div className="h-[288.75px] overflow-hidden my-4">
-          <Image
-            src={blog.image}
-            alt={blog.title}
-            className="h-full w-full object-cover"
-          />
+   <>
+   {/* blog content */}
+   <div className="container mx-auto md:px-20 px-5 ">
+        <div className="text-start text-lg font-medium leading-relaxed mt-16">
+          <p className="mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p className="mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        {/* <h1 className="text-2xl font-bold my-4">{blog.title}</h1> */}
-        {/* <p className="text-gray-700">{blog.desc}</p> */}
+        <div className="flex space-x-5">
+          <BiSolidQuoteRight className="text-gray-400" size={60}/>
+          <p className="uppercase text-gray-800 md:text-4xl text-2xl leading-tight tracking-wide">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+          </p>
+        </div>
+        <div className="text-start text-lg font-medium leading-relaxed mt-16">
+          <p className="mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p className="mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div className="mt-16">
+          <h1 className="md:text-[40px] text-[19px] font-[400] md:leading-[40px] leading-[22px] tracking-[0.5px] mb-10 uppercase">Lorem ipsum dolor sit amet</h1>
+          <p className="mb-10 text-lg font-medium leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ad minim veniam, quis nostrud exercitation ullamco labori</p>
+          <ul className="list-disc md:mx-20 mx-10 my-10 text-lg font-medium leading-relaxed">
+            <li>Crisp fresh iconic elegant timeless clean perfume</li>
+            <li>Neck straight sharp silhouette and dart detail</li>
+            <li>Machine wash cold slim fit premium stretch selvedge denim comfortable low waist</li>
+          </ul>
+        </div>
+        <div className="text-start text-lg font-medium leading-relaxed mt-16">
+          <p className="mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
       </div>
-    </div>
+   </>
   );
 };
 

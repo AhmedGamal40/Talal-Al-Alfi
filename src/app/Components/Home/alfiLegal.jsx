@@ -1,19 +1,9 @@
-import Image from 'next/image'
 import React from 'react'
-import coverImage from "../../../../public/Assets/Images/cover.png";
 
 function AlfiLegal() {
   return (
     
     <div className="relative w-full h-full flex items-center justify-center">
-    {/* <Image
-      src={coverImage}
-      alt="Cover Image"
-      layout="fill"
-      objectFit="cover"
-      quality={100}
-      className="z-0"
-    /> */}
     <div className=" w-[758px] z-10 my-10">
       <div className='md:mt-5 m-5 sm:w-3/4 md:w-full  sm:mx-auto'>
         <h1 className="font-[600] md:text-[55px] text-[30px] text-white md:leading-[74.71px] leading-[50.71px] uppercase">Alfi legal</h1>

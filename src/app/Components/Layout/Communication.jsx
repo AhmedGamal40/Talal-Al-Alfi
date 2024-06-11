@@ -9,7 +9,7 @@ function Communication() {
       <div className="container mx-auto p-6">
         <div className="flex justify-center text-center md:space-x-60 text-white space-x-14">
           <div className="items-center text-center">
-            <a href="mailto:tlal@alfilegal.com" target="blank">
+            <a href="mailto:talal@alfilegal.com" target="blank">
               <IoMail className="text-white mx-auto" size={25} />
               <p className="text-white text-sm mt-2">Contact</p>
             </a>

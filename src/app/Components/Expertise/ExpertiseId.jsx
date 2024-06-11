@@ -1,10 +1,49 @@
 import React from 'react'
+import image1 from "../../../../public/Assets/Images/image1.png";
+import image2 from "../../../../public/Assets/Images/image2.png";
+import image3 from "../../../../public/Assets/Images/image3.png";
+import image4 from "../../../../public/Assets/Images/image4.png";
+import image5 from "../../../../public/Assets/Images/image5.png";
+import image6 from "../../../../public/Assets/Images/image6.png";
+function ExpertiseId({id}) {
+    const data = [
+        {
+          id:1,
+          title: "CORPORATES",
+          imageUrl: image1,
+        },
+        {
+          id:2,
+          title: "DISPUTE RESOLUTIONS",
+          imageUrl: image2,
+        },
+        {
+          id:3,
+          title: "FINANCIAL SECTOR",
+          imageUrl: image3,
+        },
+        {
+          id:4,
+          title: "FIN-TECHS & STARTUPS",
+          imageUrl: image4,
+        },
+        {
+          id:5,
+          title: "REAL ESTATE ORGANIZATIONS",
+          imageUrl: image5,
+        },
+        {
+          id:6,
+          title: "TECHNOLOGIES",
+          imageUrl: image6,
+        },
+      ];
 
-function Expertise1() {
+    const blogTitle = data.find((item) => item.id === parseInt(id, 10));
   return (
-    <>
-    <div className='flex flex-col md:w-3/5 container w-full mx-auto mt-20 mb-32'>
-      <h3 className='font-[700] text-[27.9px] leading-[27.9px] p-4 uppercase'> Corporate </h3>
+   <>
+   <div className='flex flex-col md:w-3/5 container w-full mx-auto mt-20 mb-32'>
+      <h3 className='font-[700] text-[27.9px] leading-[27.9px] p-4 uppercase'> {blogTitle.title} </h3>
       <p className='font-[500] text-[21.39px] leading-[29.95px] p-4 text-[#333333] my-8 '>Corporate law is the rulebook for businesses, from starting to big deals, and everything in between.</p>
       <hr />
       <p className='font-[400] text-[21.39px] leading-[29.95px] text-[#333333] p-4 my-8'>Corporate law serves as the comprehensive playbook for businesses, encompassing pivotal stages such as inception, including processes like incorporation, to navigating significant milestones like mergers and acquisitions, while also intricately guiding day-to-day operations through adherence to regulatory frameworks. It serves as the backbone, providing structure and legal guidance to ensure businesses thrive within the bounds of compliance and strategic decision-making.</p>
@@ -26,8 +65,8 @@ function Expertise1() {
         <li className='md:p-8 p-4'>14. Litigating a landmark securities dispute before the Committee of Securities Disputes in relation to the manager’s liability for the delisting of a leading public company.</li>
       </ul>
     </div>
-    </>
+   </>
   )
 }
 
-export default Expertise1
+export default ExpertiseId

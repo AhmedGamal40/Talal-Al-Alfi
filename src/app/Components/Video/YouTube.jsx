@@ -38,28 +38,15 @@ function YouTube() {
             key={index}
             className="relative text-white h-60 flex transition-transform duration-300 ease-in-out transform bg-white"
           >
-            {/* <video className="absolute inset-0 z-0 transition-opacity duration-300 ease-in-out w-full" controls>
-              <source src={sector.imageUrl} type="video/mp4" />
-            </video> */}
-            {/* <video width="500" controls>
-                <source src='https://www.youtube.com/watch?v=EaD5d31VnjY' type="video/mp4"/>
-                <source src='https://www.youtube.com/watch?v=EaD5d31VnjY' type="video/ogg"/>
-                Your browser does not support HTML video.
-            </video> */}
+           
             <iframe
                 className="absolute inset-0 z-0 transition-opacity duration-300 ease-in-out w-full h-full"
-                // src="https://www.youtube.com/embed/EaD5d31VnjY"
+               
                 src={sector.imageUrl}
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
             ></iframe>
-            {/* <div className="absolute inset-x-[10%] bottom-0 hidden py-5 text-white md:block">
-              <h5 className="text-xl">{sector.title}</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div> */}
           </div>
         ))}
       </div>
